@@ -1,5 +1,5 @@
 # Catchall Rewrite Filter for OpenSMTPd
-This filter attempts to provide similar functionality as [SimpleLogin](https://github.com/simple-login/app) but for OpenSMTPd.
+This filter attempts to provide similar functionality as [SimpleLogin](https://github.com/simple-login/app) but for OpenSMTPd. The filter takes a single argument - a path to an [alias table](https://man.openbsd.org/table) that maps catch all address to local recipient.
 
 # License for opensmtpd.py
 [Link to original project](https://github.com/palant/dmarc2html)
