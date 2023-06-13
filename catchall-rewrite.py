@@ -174,6 +174,9 @@ def rewrite_envelope(session, address):
         
         debug_msg(f'Rewriting envelope recipient: {recipient_info.recipient_addr}')
         return f'rewrite|<{recipient_info.recipient_addr}>'
+    elif address in catchall_recipient_map:
+        debug_msg(f'Inbound message for {address}')
+        return f'rewrite|<{catchall_recipient_map.get(address)}>'
     else:
         return 'proceed'
 
